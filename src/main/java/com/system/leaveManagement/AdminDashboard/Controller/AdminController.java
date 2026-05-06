@@ -7,13 +7,12 @@ import com.system.leaveManagement.AdminDashboard.Request.AdminDTO;
 import com.system.leaveManagement.AdminDashboard.Request.RequestByAdmin;
 import com.system.leaveManagement.AdminDashboard.Request.RequestForLoginByAdmin;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 
 @RestController
 @RequestMapping("/admin")
+@CrossOrigin(origins = "http://localhost:5173")
 public class AdminController {
 
 
