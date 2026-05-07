@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RequestForLeave {
     private String employeeName;
-    private String employeeEmail;
+    private String emailEmployee;
     private String reason;
     private int days;
 

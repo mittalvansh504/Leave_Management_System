@@ -16,4 +16,6 @@ public class LeaveController {
     public LeaveEntity leaveapplication(@RequestBody RequestForLeave requestForLeave){
         return leaveInterface.leaveapplication(requestForLeave);
     }
+
+
 }
