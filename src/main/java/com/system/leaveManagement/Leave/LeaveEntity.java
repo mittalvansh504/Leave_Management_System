@@ -23,5 +23,6 @@ public class LeaveEntity {
     private String employeeEmail;
     private String reason;
     private int days;
+    private String status;
 
 }

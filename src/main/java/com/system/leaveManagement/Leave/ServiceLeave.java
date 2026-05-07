@@ -13,9 +13,10 @@ public class ServiceLeave implements LeaveInterface{
     public LeaveEntity leaveapplication(RequestForLeave requestForLeave) {
         LeaveEntity leaveEntity = new LeaveEntity();
         leaveEntity.setEmployeeName(requestForLeave.getEmployeeName());
-        leaveEntity.setEmployeeEmail(requestForLeave.getEmployeeEmail());
+        leaveEntity.setEmployeeEmail(requestForLeave.getEmailEmployee());
         leaveEntity.setReason(requestForLeave.getReason());
         leaveEntity.setDays(requestForLeave.getDays());
+        leaveEntity.setStatus("Pending");
 
         leaveRepository.save(leaveEntity);
         return leaveEntity;
